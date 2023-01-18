@@ -1,0 +1,22 @@
+.intro{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.eu_no_trampo{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 15%;
+    margin-bottom: auto;
+}
+
+.project_box{
+    align-items: center;
+}
+
+.start_menu{
+    align-items: center;
+}
