@@ -1,1 +1,18 @@
-<app-card [title]="card"></app-card>
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+<p>menu lateral</p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="mat-18">menu</mat-icon>
+    </button>
+    Sidenav content
+    <div class="presentation"><span><p>Hi there, welcome to the my backup. I have created this space to register things I learn and share
+      it with whoever is interested in technology, star wars, games and science (specially astrophysics).
+      If you like this content of find something that need some improvement, don't hesitate to make
+      contact in any of the buttons in the side menu. Hope you find something useful :)</p></span></div>
+
+    <app-card [title]="card01Title" [content]="content"></app-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

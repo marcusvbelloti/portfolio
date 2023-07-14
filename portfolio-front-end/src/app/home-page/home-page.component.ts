@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {NgIf, NgFor} from '@angular/common';
+import { MatIconButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-home-page',
@@ -7,7 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  card = 'card01'
+  card01Title = 'Blog';
+  content = "welcome";
+
+  events: string[] = [];
+  opened!: boolean;
+
   constructor() { }
 
   ngOnInit() {

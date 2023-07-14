@@ -8,6 +8,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CardComponent } from './card/card.component';
 import {MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
+import {FormsModule} from '@angular/forms';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {NgIf, NgFor} from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,13 @@ import { MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    NgIf,
+    NgFor,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

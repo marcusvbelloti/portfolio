@@ -11,7 +11,9 @@ export class CardComponent implements OnInit {
 
   @Input()
   title = '';
+  @Input()
   content= '';
+  @Input()
   link='';
 
   constructor() { }
