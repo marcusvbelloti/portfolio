@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  card = 'card01'
   constructor() { }
 
   ngOnInit() {
