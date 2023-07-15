@@ -12,7 +12,9 @@ import { MatIconButton } from '@angular/material/button';
 })
 export class HomePageComponent implements OnInit {
 
-  card01Title = 'Blog';
+  card01Title = 'Data Science / Analytics';
+  card02Title = 'Programming';
+  card03Title = 'UX / UI';
   content = "welcome";
 
   events: string[] = [];
@@ -21,6 +23,8 @@ export class HomePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+  onClick(event: Event): void {
   }
 
 }

@@ -1,18 +1,82 @@
 <mat-sidenav-container class="container">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
-<p>menu lateral</p>
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+    <div class="photo-container">
+      <div class="photo">
+        <img src="../../assets/images/eu_na_rua.jpg" class="selfie" />
+      </div>
+      <div class="title"><h3>Marcus</h3></div>
+    </div>
+    <div class="nav">
+      <div class="nav-button">
+        <button mat-button (click)="(onClick)">Blog - Knowledge Backup</button>
+        <button mat-button (click)="(onClick)">
+          Projects - Work in Progress
+        </button>
+        <button mat-button (click)="(onClick)">Resume and Certificates</button>
+      </div>
+    </div>
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact-item">
+          <button (click)="(onClick)">
+            <img
+              class="logo"
+              src="../../assets/images/linkedin-logo.png"
+              alt="LinkedIn"
+            />
+          </button>
+        </div>
+        <div class="contact-item">
+          <button (click)="(onClick)">
+            <img
+              class="logo"
+              src="../../assets/images/email-png.png"
+              alt="E-mail"
+            />
+          </button>
+        </div>
+        <div class="contact-item">
+          <button (click)="(onClick)">
+            <img
+              class="logo"
+              src="../../assets/images/GitHub-logo.png"
+              alt="GitHub"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button mat-icon-button (click)="sidenav.toggle()">
+    <div class="top-bar">
+      <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon class="mat-18">menu</mat-icon>
-    </button>
-    Sidenav content
-    <div class="presentation"><span><p>Hi there, welcome to the my backup. I have created this space to register things I learn and share
-      it with whoever is interested in technology, star wars, games and science (specially astrophysics).
-      If you like this content of find something that need some improvement, don't hesitate to make
-      contact in any of the buttons in the side menu. Hope you find something useful :)</p></span></div>
+      </button>
+      <h1 class="welcome-msg">
+        Welcome :)
+        <h6>click in the menu icon to see more</h6>
+      </h1>
+    </div>
 
-    <app-card [title]="card01Title" [content]="content"></app-card>
+    <div class="presentation">
+      <span
+        ><p>
+          Hi there, welcome to the my backup. I have created this space to
+          register things I learn and share it with whoever is interested in
+          technology, star wars, games and science. If you like this content of
+          find something that need some improvement, don't hesitate to make
+          contact in any of the buttons in the side menu. Hope you find
+          something useful :)
+        </p></span
+      >
+    </div>
+
+    <div class="skills-container">
+    <app-card class="skill-item" [title]="card01Title" [content]="content"></app-card>
+    <app-card class="skill-item" [title]="card02Title" [content]="content"></app-card>
+    <app-card class="skill-item" [title]="card03Title" [content]="content"></app-card>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -4,3 +4,64 @@
   border-radius: 10px;
   margin: 20px;
 }
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.skills-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-button{
+  display: flex;
+}
+
+.nav-button{
+flex-direction: column;
+}
+
+.photo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-msg{
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.top-bar{
+  display: flex;
+  flex-direction: row;
+}
+.selfie{
+  border-color: blue;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 35%;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+}
+
+
