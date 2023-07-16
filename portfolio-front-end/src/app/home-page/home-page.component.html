@@ -55,7 +55,7 @@
         <mat-icon class="mat-18">menu</mat-icon>
       </button>
       <h1 class="welcome-msg">
-        Welcome :)
+        TheBackup
         <h6>click in the menu icon to see more</h6>
       </h1>
     </div>
@@ -74,9 +74,26 @@
     </div>
 
     <div class="skills-container">
-    <app-card class="skill-item" [title]="card01Title" [content]="content"></app-card>
-    <app-card class="skill-item" [title]="card02Title" [content]="content"></app-card>
-    <app-card class="skill-item" [title]="card03Title" [content]="content"></app-card>
+      <app-card
+        class="skill-item"
+        [title]="card01Title"
+        [content]="card01Content"
+      ></app-card>
+      <app-card
+        class="skill-item"
+        [title]="card02Title"
+        [content]="card02Content"
+      ></app-card>
+      <app-card
+        class="skill-item"
+        [title]="card03Title"
+        [content]="card03Content"
+      ></app-card>
+      <app-card
+        class="skill-item"
+        [title]="card04Title"
+        [content]="card04Content"
+      ></app-card>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

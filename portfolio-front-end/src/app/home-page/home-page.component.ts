@@ -15,7 +15,11 @@ export class HomePageComponent implements OnInit {
   card01Title = 'Data Science / Analytics';
   card02Title = 'Programming';
   card03Title = 'UX / UI';
-  content = "welcome";
+  card04Title = '.CoRe';
+  card01Content = 'Data Analytics Content';
+  card02Content = '';
+  card03Content = '';
+  card04Content = '';
 
   events: string[] = [];
   opened!: boolean;
